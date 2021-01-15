@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>GeonNames Exercise</title>
+        <meta name="author" content ="Sam Welsh">
+        <meta name="description" content="A small project using HTML, JavaScript, jQuery, PHP, cURL and AJAX.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>GeoNames Exercise</h1>
+        <span>Enter a latitude:</span>
+        <input type="number" name="lat" id="lat" placeholder="Range from -90 to 90">
+        <br><br>
+        <span>Enter a longitude:</span>
+        <input type="number" name="lng" id="lng" placeholder="Range from -180 to 180">
+        <br><br>
+        <div>
+            <table>
+                <tr>
+                    <th>API Name</th>
+                    <th>API Description</th>
+                    <th><!--blank--></th>
+                </tr>
+                <tr>
+                    <td>Country Subdivision</td>
+                    <td>Returns the country and the administrative subdivison (state, province etc.) for the given latitude/longitude.</td>
+                    <td>
+                        <button id="subBtn1">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Returns the nearest address for the given latitude/longitude.</td>
+                    <td>
+                        <button id="subBtn2">Submit</button>
+                    </td>
+                    <tr>
+                        <td>Ocean</td>
+                        <td>Returns the ocean or sea for the given latitude/longitude.</td>
+                        <td>
+                            <button id="subBtn3">Submit</button>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Results</h2>
+
+        <div>
+            <p id="results"></p>        
+        </div>
+
+        <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+        <script type="application/javascript" src="libs/js/script.js"></script>
+        
+    </body>
+
+</html>
