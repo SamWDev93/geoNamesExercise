@@ -1,0 +1,9 @@
+#inputContainer,
+#resultsContainer {
+  display: inline-flex;
+}
+
+.input,
+.result {
+  padding: 40px;
+}
